@@ -1,0 +1,66 @@
+/* Глобальные стили для проекта, их можно дополнять и менять по желанию */
+@import url('/fonts/fonts.css');
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0 auto;
+	font-family: 'IBM Plex Mono', sans-serif;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+
+}
+
+ul,
+ol,
+li {
+	margin: 0;
+	list-style: none;
+	list-style-type: none;
+}
+
+
+picture {
+	margin: 0;
+	padding: 0;
+}
+
+button,
+a {
+
+	color: currentColor;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	border: none;
+	outline: none;
+	text-decoration: none;
+	background-color: transparent;
+}
+
+[class*=__container] {
+	width: 100%;
+	min-inline-size: 375px;
+	max-inline-size: 1400px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	padding: 0px 20px;
+}
+
+main {
+	margin-top: -44px;
+}
