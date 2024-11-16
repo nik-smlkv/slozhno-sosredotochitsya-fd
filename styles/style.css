@@ -91,13 +91,16 @@
 	gap: 114px;
 }
 
-.no-focus__title {
-	margin-top: 273px;
+.title {
 	color: var(--title-color);
 	font-size: 157px;
 	font-weight: 700;
 	text-shadow: 4px 4px 0px #FF0070;
 	line-height: 129.53px;
+}
+
+.no-focus__title {
+	margin-top: 273px;
 }
 
 .no-focus__subtitle {
@@ -113,10 +116,19 @@
 .block__title-background {
 	background-color: var(--neon-pink-color);
 	color: black;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 23.4px;
 }
 
-.concentration-background {
-	background-color: #000028;
+main {
+	background-color: var(--section-background-color);
+}
+
+.focus__title {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .why-concentration {}
@@ -131,10 +143,14 @@
 
 .title-color {
 	color: var(--neon-pink-color);
+	font-size: 18px;
 }
 
 .text-color {
 	color: var(--text-color);
+	font-size: 18px;
+	line-height: 23.4px;
+	font-weight: 400;
 }
 
 .why-concentration__container {
@@ -154,6 +170,7 @@
 	display: flex;
 	flex-direction: column;
 	flex: 1 1 auto;
+	gap: 10px;
 }
 
 .why-concentration-block__title {}
@@ -167,11 +184,23 @@
 .what-concentration__container {
 	display: flex;
 	align-items: start;
+	gap: 20px;
+}
+
+.what-concentration__content {
+	display: flex;
+	gap: 20px;
 }
 
 .what-concentration__title {}
 
-.what-concentration-text__block {}
+.what-concentration-text__block {
+	display: flex;
+	flex-direction: column;
+	flex: 33.333%;
+	flex-wrap: wrap;
+	gap: 10px;
+}
 
 .what-concentration-block__title {}
 
@@ -179,12 +208,45 @@
 
 .how-concentration {}
 
-.how-concentration__container {}
+.how-concentration__container {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+}
 
-.how-concentration__title {}
+.how-concentration-text__content {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	flex: 1 1 100%;
+}
 
-.how-concentration-text__block {}
+.how-concentration__title {
+	flex: 1 1 35%;
+}
 
-.how-concentration-block__title {}
+.first-title {
+	margin-bottom: 10px;
+}
+
+.how-concentration-text__block {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
 
 .how-concentration-block__text {}
+
+.image-concentration__block {
+	display: grid;
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-flow: dense;
+}
+
+.image-concentration {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}

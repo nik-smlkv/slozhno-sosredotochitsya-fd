@@ -3,10 +3,10 @@
   и их переопределение под различные устройства
 */
 
-:root
-{
-	--display-none:  none;
+:root {
+	--display-none: none;
 	--title-color: #DB00FF;
 	--neon-pink-color: #FF0070;
 	--text-color: #F1B2CE;
+	--section-background-color: #000028;
 }
