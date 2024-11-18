@@ -5,11 +5,36 @@
 */
 
 .page.theme_dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+	color: var(--text-color);
+	background-color: var(--section-background-color);
 }
-.header__theme-menu-button {
+
+body.page.theme_dark .title {
+	color: var(--title-color);
+}
+
+body.page.theme_dark .header__theme-menu-button {
 	color: var(--neon-pink-color);
+
+}
+
+body.page.theme_dark .header__theme-menu-button_type_dark {
+	color: var(--neon-pink-color);
+}
+
+body.page.theme_dark .header__theme-menu-button_active {
+	border: 1px solid var(--neon-pink-color);
+}
+
+body.page.theme_dark .block__title-background {
+	background-color: var(--neon-pink-color);
+	color: var(--text-black-color);
+}
+
+body.page.theme_dark .title-color {
+	color: var(--neon-pink-color);
+}
+
+body.page.theme_dark .no-focus {
+	--background-url: url('/images/cover-image-dark.png');
 }
