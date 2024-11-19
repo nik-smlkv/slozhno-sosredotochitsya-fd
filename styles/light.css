@@ -1,0 +1,56 @@
+/*
+  Специально для светлой темы при наличии класса.
+  Здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
+
+.page.theme_light {
+  --text-color: #353430;
+  --section-background-color: #fff1f7;
+}
+
+body.page.theme_light .title {
+  --title-color: #ffc2e6;
+}
+
+body.page.theme_light .header__theme-menu-button_type_light {
+  --neon-pink-color: #353430;
+}
+body.page.theme_light .header__theme-menu-button {
+  --neon-pink-color: #353430;
+}
+
+body.page.theme_light .block__title-background {
+  --neon-pink-color: #ff8dcb;
+}
+
+body.page.theme_light .title-color {
+  --neon-pink-color: #353430;
+}
+
+body.page.theme_light .no-focus {
+  --background-url: url("/images/cover-image-light.png");
+}
+
+body.page.theme_light .decoration-after {
+  --neon-pink-color: #353430;
+}
+
+body.page.theme_light .decoration-before {
+  --neon-pink-color: #353430;
+}
+
+body.page.theme_light .logo {
+  display: none;
+}
+
+@media (hover: hover) {
+  body.page.theme_light .header__theme-menu-button:hover {
+    margin: -1px;
+    border: 1px solid #32312d66;
+  }
+  body.page.theme_light .header__theme-menu-button:focus {
+    border-bottom: 1px solid #32312d66;
+    margin-bottom: -1px;
+  }
+}
