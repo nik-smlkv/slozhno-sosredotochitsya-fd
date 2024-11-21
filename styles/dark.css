@@ -1,0 +1,40 @@
+/*
+  Специально для тёмной темы при наличии класса,
+  здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
+
+.page.theme_dark {
+	color: var(--text-color);
+	background-color: var(--section-background-color);
+}
+
+body.page.theme_dark .title {
+	color: var(--title-color);
+}
+
+body.page.theme_dark .header__theme-menu-button {
+	color: var(--brand-color);
+
+}
+
+body.page.theme_dark .header__theme-menu-button_type_dark {
+	color: var(--brand-color);
+}
+
+body.page.theme_dark .header__theme-menu-button_active {
+	border: 1px solid var(--brand-color);
+}
+
+body.page.theme_dark .block__title-background {
+	background-color: var(--brand-color);
+	color: var(--text-black-color);
+}
+
+body.page.theme_dark .title-color {
+	color: var(--brand-color);
+}
+
+body.page.theme_dark .no-focus {
+	--background-url: url('../images/cover-image-dark.png');
+}
