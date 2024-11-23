@@ -35,6 +35,6 @@ body.page.theme_dark .title-color {
 	color: var(--brand-color);
 }
 
-body.page.theme_dark .no-focus {
+body.page.theme_dark .header {
 	--background-url: url('../images/cover-image-dark.png');
 }

@@ -28,7 +28,7 @@ body.page.theme_light .title-color {
   --brand-color: #353430;
 }
 
-body.page.theme_light .no-focus {
+body.page.theme_light .header {
   --background-url: url("../images/cover-image-light.png");
 }
 
