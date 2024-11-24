@@ -116,6 +116,16 @@
 	letter-spacing: 9px;
 }
 
+.link-decoration {
+	text-shadow: 2px 2px 0px var(--brand-color);
+}
+
+
+.link-decoration:focus {
+	border: 1px solid var(--text-color);
+	margin: -1px;
+}
+
 .no-focus__subtitle {
 	align-self: end;
 	background-color: var(--brand-color);
@@ -311,7 +321,7 @@ main {
 }
 
 @media (max-width: 550px) {
-	.image-concentration__container {
+	.image-concentration__block {
 		gap: 10px;
 		grid-template-columns: repeat(1, auto);
 		grid-template-rows: repeat(5, auto);
@@ -343,7 +353,7 @@ main {
 	}
 
 	.header__container {
-		gap: 166px;
+		gap: clamp(20px, 1vw, 166px);
 	}
 
 	.how-concentration-text__content {
@@ -369,28 +379,58 @@ main {
 		top: 20px;
 	}
 
-	.no-focus__container {
-		gap: clamp(55px, 22vw, 162px);
-	}
 }
 
 @media (max-width: 374.99px) {
-	.decoration-after {
-		bottom: 10px;
-		left: 10px;
-	}
-
-	.decoration-before {
-		top: 10px;
-		right: 10px;
+	.image-concentration__title {
+		font-size: 20px;
 	}
 
 	.no-focus__title {
-		margin-top: 238px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		margin-left: 0px;
 	}
 
 	.no-focus__subtitle {
 		margin-bottom: 66px;
+	}
+
+	.header__theme-menu {
+		margin-bottom: 40px;
+		margin-top: 70px;
+	}
+
+	.decorated-zone::after {
+		left: 10px;
+		bottom: 10px
+	}
+
+	main {
+		gap: 45px;
+		margin-top: 0px;
+	}
+
+	.text-color {
+		font-size: 20px
+	}
+
+	.what-concentration__title {
+		width: 100%;
+	}
+
+	.decorated-zone::before {
+		top: 10px;
+		right: 10px;
+	}
+
+	.why-concentration__title {
+		flex: 1 1 100%;
+	}
+
+	.logo {
+		top: 10px;
+		right: 10px;
 	}
 }
 
@@ -398,6 +438,11 @@ main {
 	.header__theme-menu-button:hover {
 		border: 1px solid #ff007066;
 		margin: -1px;
+	}
+
+	.link-decoration:hover {
+		margin: -1px;
+		border-bottom: 1px solid var(--text-color);
 	}
 
 	.header__theme-menu-button:focus {

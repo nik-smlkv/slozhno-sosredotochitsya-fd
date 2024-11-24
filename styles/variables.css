@@ -8,6 +8,8 @@
 	--brand-color: #FF0070;
 	--text-color: #F1B2CE;
 	--text-black-color: #000028;
+	--link-decoration-light-color: #FF8DCB;
 	--section-background-color: var(--text-black-color);
 	--background-url: url('../images/cover-image.png');
+	--light-text-color: #32312d66;
 }
