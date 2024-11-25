@@ -2,6 +2,8 @@
 
 .page {
 	/* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+	background-image: var(--background-url);
+	background-attachment: fixed;
 }
 
 .header {
@@ -12,9 +14,7 @@
 	height: 100vh;
 	min-block-size: 668px;
 	z-index: 1;
-	background-image: var(--background-url);
-	background-size: cover;
-	background-repeat: no-repeat;
+
 }
 
 .header__theme-menu {
