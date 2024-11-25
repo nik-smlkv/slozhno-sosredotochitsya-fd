@@ -5,11 +5,16 @@
 
 :root {
 	--title-color: #DB00FF;
+	--title-light-theme-color: #ffc2e6;
 	--brand-color: #FF0070;
 	--text-color: #F1B2CE;
 	--text-black-color: #000028;
-	--link-decoration-light-color: #FF8DCB;
+	--text-in-light-theme-color: #353430;
+	--background-title-light-theme-color: #FF8DCB;
 	--section-background-color: var(--text-black-color);
-	--background-url: url('../images/cover-image.png');
-	--light-text-color: #32312d66;
+	--section-light-theme-background-color: #fff1f7;
+	--background-auto-url: url('../images/cover-image.png');
+	--background-dark-url: url('../images/cover-image-dark.png');
+	--background-light-url: url('../images/cover-image-light.png');
+	--light-theme-text-color: #32312d66;
 }

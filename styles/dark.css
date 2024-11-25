@@ -5,5 +5,12 @@
 */
 
 .page.theme_dark {
-	--background-url: url('../images/cover-image-dark.png');
+	background-image: var(--background-dark-url);
+}
+
+@media(prefers-color-scheme: dark){
+	.page.theme_auto {
+		background-image: var(--background-dark-url);
+	}
+	
 }

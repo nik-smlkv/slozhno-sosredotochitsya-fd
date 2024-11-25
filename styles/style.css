@@ -2,24 +2,22 @@
 
 .page {
 	/* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-	background-image: var(--background-url);
+	background-image: var(--background-auto-url);
 	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .header {
-	display: flex;
 	justify-content: center;
-	position: relative;
 	height: 100vh;
 	min-block-size: 668px;
-	z-index: 1;
-
+	position: relative;
 }
 
 .header__theme-menu {
 	display: flex;
 	align-items: center;
-	position: relative;
 	margin-top: 20px;
 }
 
@@ -51,7 +49,7 @@
 	display: flex;
 	position: absolute;
 	right: 0;
-	top: 0;
+	top: 20px;
 	color: var(--brand-color);
 	font-size: 18px;
 	font-weight: 400;
@@ -77,7 +75,7 @@
 	content: '';
 	display: block;
 	position: absolute;
-	left: 20px;
+	left: 0px;
 	bottom: 20px;
 	width: 25px;
 	height: 25px;
@@ -89,7 +87,7 @@
 	content: '';
 	display: block;
 	position: absolute;
-	right: 20px;
+	right: 0px;
 	top: 20px;
 	width: 25px;
 	height: 25px;
@@ -99,17 +97,20 @@
 
 .title {
 	color: var(--title-color);
-	font-size: clamp(116px, 17vw, 157px);
+	font-size: clamp(116px, 16vw, 157px);
 	font-weight: 700;
 	text-shadow: 4px 4px 0px var(--brand-color);
 	line-height: clamp(95.7px, 13vw, 129.53px);
 }
 
-.no-focus__title {
+.no-focus-block__text {
 	margin-top: 273px;
 	margin-bottom: 114px;
+
+}
+
+.title-margin-left {
 	margin-left: -20px;
-	letter-spacing: 9px;
 }
 
 .link-decoration {
@@ -119,10 +120,17 @@
 
 .link-decoration:focus {
 	border: 1px solid var(--text-color);
-	margin: -1px;
+
 }
 
-.no-focus__subtitle {
+.no-focus-block__text {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 162px;
+}
+
+.no-focus-block__subtitle {
 	align-self: end;
 	background-color: var(--brand-color);
 	max-width: 491px;
@@ -139,55 +147,50 @@
 }
 
 main {
+	padding-top: 60px;
 	background-color: var(--section-background-color);
 }
 
 .focus {
+	background-color: var(--section-background-color);
 	position: relative;
 	height: 100vh;
-}
-
-.focus__title {
 	width: 100%;
-	height: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-
 }
 
-.why-concentration {}
 
-.concentration-background {}
 
-.why-concentration__title {
-	color: var(--brand-color);
+.why-concentration-block__title {
 	flex: 0 1 32%;
 }
 
 .title-color {
 	color: var(--brand-color);
-	font-size: 20px;
+	font-size: 18px;
+	font-weight: 700;
 }
 
 .text-color {
 	color: var(--text-color);
-	font-size: 19px;
+	font-size: 18px;
 	line-height: 23.4px;
 	font-weight: 400;
 }
 
 .why-concentration__container {
-	display: flex;
-	flex-wrap: wrap;
 	flex-direction: row;
+}
+
+.content-flex {
+	display: flex;
 	gap: 20px;
 }
 
 .why-concentration-text__block {
-	display: flex;
 	flex-wrap: wrap;
-	gap: 20px;
 	flex: 1 1 50%;
 }
 
@@ -198,32 +201,20 @@ main {
 	gap: 10px;
 }
 
-.why-concentration-block__title {
-	font-size: 18px;
-	line-height: 23.4px;
-	font-weight: 700;
-}
-
-.what-concentration__container {
+.content-section {
 	display: flex;
-	align-items: start;
 	gap: 20px;
 }
 
-.what-concentration__content {
-	display: flex;
-	gap: 22px;
+.what-concentration__content {}
+
+.what-concentration {
+	flex-direction: column;
 	flex-wrap: wrap;
 }
 
-.what-concentration__title {
-	width: clamp(236px, 29vw, 315px);
-}
-
 .what-concentration-block__title {
-	font-weight: 700;
-	font-size: 18px;
-	line-height: 23.4px;
+	width: clamp(236px, 29vw, 315px);
 }
 
 .what-concentration-text__block {
@@ -242,9 +233,12 @@ main {
 }
 
 .how-concentration-block__title {
-	font-size: 18px;
-	line-height: 23.4px;
+	flex: 1 1 28%;
+}
+
+.title-font-weight {
 	font-weight: 700;
+	margin-bottom: 10px;
 }
 
 .how-concentration-text__content {
@@ -252,10 +246,6 @@ main {
 	flex-direction: column;
 	gap: 20px;
 	flex: 1 1 61.7%;
-}
-
-.how-concentration__title {
-	flex: 1 1 28%;
 }
 
 .first-title {
@@ -268,17 +258,8 @@ main {
 	gap: 10px;
 }
 
-
-
-.image-concentration__title {
-	margin-top: 20px;
-	font-weight: 700;
-	font-size: 20px;
-	line-height: 23.4px;
-}
-
-.image-concentration__container {
-	gap: 20px;
+.image-concentration {
+	flex-direction: column;
 }
 
 .image-concentration__block {
@@ -321,6 +302,10 @@ main {
 }
 
 @media (max-width: 550px) {
+	.image-concentration__container {
+		gap: 10px;
+	}
+
 	.image-concentration__block {
 		gap: 10px;
 		grid-template-columns: repeat(1, auto);
@@ -331,6 +316,14 @@ main {
 			"C"
 			"D"
 			"E";
+	}
+
+	.image-concentration__fourth {
+		grid-area: C;
+	}
+
+	.image-concentration__fifth {
+		grid-area: D;
 	}
 }
 
@@ -348,19 +341,9 @@ main {
 		margin-top: -25px;
 	}
 
-	.no-focus__title {
-		letter-spacing: 0px;
-	}
 
-
-	.text-color {
-		font-size: 19.5px;
-	}
-
-
-	.no-focus__subtitle {
+	.no-focus-block__subtitle {
 		margin-bottom: 34px;
-		font-size: 20px;
 	}
 
 	.header__theme-menu-list {
@@ -370,16 +353,12 @@ main {
 		gap: 14px;
 	}
 
-	.header__theme-menu-button {
-		font-size: 20px;
-	}
-
 	.header__container {
 		gap: clamp(20px, 24vw, 168px);
 		justify-content: center;
 	}
 
-	.image-concentration__title {
+	.image-concentration-block__title {
 		margin-top: 0px;
 	}
 
@@ -392,12 +371,12 @@ main {
 		margin-top: 0px;
 	}
 
-	.no-focus__title {
+	.no-focus-block__text {
 		margin-top: 0px;
 		margin-bottom: 0px;
 	}
 
-	.no-focus__subtitle {
+	.no-focus-block__subtitle {
 		max-width: 364px;
 		margin-bottom: 0px;
 	}
@@ -409,23 +388,31 @@ main {
 }
 
 @media (max-width: 374.99px) {
-	.image-concentration__title {
-		font-size: 20px;
+	main {
+		padding-top: 40px;
 	}
 
-	.no-focus__title {
+	.focus {
+		margin-top: 0px;
+	}
+
+	.header__container {
+		gap: 0px;
+	}
+
+	.no-focus-block__text {
 		margin-top: 20px;
-		margin-bottom: 20px;
+		margin-bottom: 53px;
 		margin-left: 0px;
 	}
 
-	.no-focus__subtitle {
+	.no-focus-block__subtitle {
 		margin-bottom: 66px;
 	}
 
 	.header__theme-menu {
-		margin-bottom: 40px;
-		margin-top: 70px;
+		margin-bottom: 48px;
+		margin-top: 63px;
 	}
 
 	.decorated-zone::after {
@@ -433,9 +420,12 @@ main {
 		bottom: 10px
 	}
 
-	main {
+	.main-container {
 		gap: 45px;
-		margin-top: 0px;
+	}
+
+	.image-concentration-block__title {
+		margin-top: 11px;
 	}
 
 	.what-concentration__title {
@@ -447,8 +437,12 @@ main {
 		right: 10px;
 	}
 
-	.why-concentration__title {
+	.why-concentration-block__title {
 		flex: 1 1 100%;
+	}
+
+	.header__theme-menu-button {
+		font-size: 18px;
 	}
 
 	.logo {
@@ -460,16 +454,16 @@ main {
 @media (hover: hover) {
 	.header__theme-menu-button:hover {
 		border: 1px solid #ff007066;
-		margin: -1px;
+
 	}
 
 	.link-decoration:hover {
-		margin: -1px;
+
 		border-bottom: 1px solid var(--text-color);
 	}
 
 	.header__theme-menu-button:focus {
 		border-bottom: 1px solid #ff007066;
-		margin-bottom: -1px;
+
 	}
 }
