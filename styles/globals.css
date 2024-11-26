@@ -69,7 +69,20 @@ a {
 }
 
 .main-container {
+	overflow: hidden;
 	display: flex;
 	flex-direction: column;
 	gap: 80px;
+}
+
+.page {
+	display: flex;
+	flex-direction: column;
+	gap: 60px;
+}
+
+@media(max-width: 520px) {
+	.page {
+		gap: 40px;
+	}
 }
