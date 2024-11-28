@@ -2,7 +2,8 @@
 
 .page {
 	/* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-	background-image: var(--background-auto-url);
+	background-color: var(--background-page-color);
+	background-image: var(--background-url);
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -36,6 +37,7 @@
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 18px;
+	text-align: center;
 	padding: 1.5px 13px;
 	cursor: pointer;
 	color: var(--brand-color);
@@ -63,12 +65,12 @@
 .logo::after {
 	content: '';
 	display: inline-flex;
-	border: 1px solid var(--brand-color);
+	border: 1px solid var(--background-text-color);
 	height: 9px;
-	background-color: var(--brand-color);
+	background-color: var(--background-text-color);
 	width: 9px;
 	border-radius: 50%;
-	box-shadow: 0px 0px 5px 3px var(--brand-color);
+	box-shadow: 0px 0px 5px 3px var(--background-text-color);
 }
 
 .decorated-zone::after {
@@ -99,11 +101,11 @@
 	color: var(--title-color);
 	font-size: clamp(116px, 16vw, 157px);
 	font-weight: 700;
-	text-shadow: 4px 4px 0px var(--brand-color);
+	text-shadow: 4px 4px 0px var(--text-shadow-color);
 	line-height: clamp(95.7px, 13vw, 129.53px);
 }
 
-.no-focus-block__text {
+.block__text {
 	justify-content: end;
 	width: 100%;
 	display: flex;
@@ -114,22 +116,21 @@
 }
 
 .title-margin-left {
-	margin-left: -20px;
+	margin-right: 20px;
 }
 
 .link-decoration {
-	text-shadow: 2px 2px 0px var(--brand-color);
+	text-shadow: 2px 2px 0px var(--text-shadow-color);
 }
 
 
 .link-decoration:focus {
 	border: 1px solid var(--text-color);
-
 }
 
-.no-focus-block__subtitle {
+.block__subtitle {
 	align-self: end;
-	background-color: var(--brand-color);
+	background-color: var(--background-text-color);
 	max-width: 491px;
 	font-size: 18px;
 	line-height: 23.4px;
@@ -137,19 +138,13 @@
 }
 
 .block__title-background {
-	background-color: var(--brand-color);
+	background-color: var(--background-text-color);
 	color: var(--text-black-color);
 	font-size: 18px;
 }
 
-main {
-	background-color: var(--section-background-color);
-}
-
 .focus {
-	background-color: var(--section-background-color);
 	position: relative;
-	height: 100vh;
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -190,19 +185,20 @@ main {
 	flex: 1 1 50%;
 }
 
-.why-concentration-text__content {
+.building__block {
 	display: flex;
 	flex-direction: column;
-	flex: 1 1 auto;
 	gap: 10px;
+}
+
+.why-concentration-text__content {
+	flex: 1 1 auto;
 }
 
 .content-section {
 	display: flex;
 	gap: 20px;
 }
-
-.what-concentration__content {}
 
 .what-concentration {
 	flex-direction: column;
@@ -214,11 +210,8 @@ main {
 }
 
 .what-concentration-text__block {
-	display: flex;
-	flex-direction: column;
 	flex: 1 1 31%;
 	flex-wrap: wrap;
-	gap: 10px;
 }
 
 .how-concentration__container {
@@ -246,12 +239,6 @@ main {
 
 .first-title {
 	margin-bottom: 10px;
-}
-
-.how-concentration-text__block {
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
 }
 
 .image-concentration {
@@ -304,12 +291,7 @@ main {
 		width: 100%;
 	}
 
-	.focus {
-		margin-top: -25px;
-	}
-
-
-	.no-focus-block__subtitle {
+	.block__subtitle {
 		margin-bottom: 34px;
 	}
 
@@ -338,7 +320,7 @@ main {
 		margin-top: 0px;
 	}
 
-	.no-focus-block__text {
+	.block__text {
 		gap: 160px;
 		margin-top: 174px;
 		margin-bottom: 0px;
@@ -349,7 +331,7 @@ main {
 		max-width: 200px;
 	}
 
-	.no-focus-block__subtitle {
+	.block__subtitle {
 		max-width: 364px;
 		margin-bottom: 0px;
 	}
@@ -421,17 +403,18 @@ main {
 	}
 
 
-	.main-container{
+	.main-container {
 		gap: 50px;
 	}
-	.no-focus-block__text {
+
+	.block__text {
 		margin-top: 20px;
 		margin-bottom: 0px;
 		margin-left: 0px;
 		gap: 55px;
 	}
 
-	.no-focus-block__subtitle {
+	.block__subtitle {
 		margin-bottom: 66px;
 	}
 
@@ -461,17 +444,17 @@ main {
 
 @media (hover: hover) {
 	.header__theme-menu-button:hover {
-		border: 1px solid #ff007066;
+		border: 1px solid var(--text-in-theme-color-hover);
 
 	}
 
 	.link-decoration:hover {
 
-		border-bottom: 1px solid var(--text-color);
+		border-bottom: 1px solid var(--text-in-theme-color-hover);
 	}
 
 	.header__theme-menu-button:focus {
-		border-bottom: 1px solid #ff007066;
+		border-bottom: 1px solid var(--text-in-theme-color-hover);
 
 	}
 }

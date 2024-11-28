@@ -9,12 +9,69 @@
 	--brand-color: #FF0070;
 	--text-color: #F1B2CE;
 	--text-black-color: #000028;
-	--text-in-light-theme-color: #353430;
+	--background-text-color: var(--brand-color);
+	--text-shadow-color: var(--brand-color);
+	--text-in-theme-color-hover: #ff007066;
 	--background-title-light-theme-color: #FF8DCB;
-	--section-background-color: var(--text-black-color);
-	--section-light-theme-background-color: #fff1f7;
-	--background-auto-url: url('../images/cover-image.png');
-	--background-dark-url: url('../images/cover-image-dark.png');
-	--background-light-url: url('../images/cover-image-light.png');
-	--light-theme-text-color: #32312d66;
+	--background-url: url('../images/cover-image-dark.png');
+	--background-page-color: #000028;
+}
+
+:root .page.theme_light {
+	--title-color: #ffc2e6;
+	--text-color: #353430;
+	--background-text-color: #FF8DCB;
+	--brand-color: #353430;
+	--text-black-color: #353430;
+	--text-shadow-color: #353430;
+	--text-in-theme-color-hover: #32312D40;
+	--section-background-color: #fff1f7;
+	--background-url: url('../images/cover-image-light.png');
+	--background-page-color: #fff1f7;
+}
+
+:root .page.theme_dark {
+	--title-color: #DB00FF;
+	--brand-color: #FF0070;
+	--text-color: #F1B2CE;
+	--text-black-color: #000028;
+	--background-text-color: var(--brand-color);
+	--text-shadow-color: var(--brand-color);
+	--text-in-theme-color-hover: #ff007066;
+	--background-url: url('../images/cover-image-dark.png');
+	--background-page-color: #000028;
+}
+
+@media (prefers-color-scheme: light) {
+	:root .page.theme_auto {
+		--title-color: #ffc2e6;
+		--text-color: #353430;
+		--background-text-color: #FF8DCB;
+		--brand-color: #353430;
+		--text-black-color: #353430;
+		--text-shadow-color: #FF0070;
+		--text-in-theme-color-hover: #32312D40;
+		--background-url: url('../images/cover-image-light.png');
+		--background-page-color: #fff1f7;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	:root .page.theme_auto {
+		--title-color: #DB00FF;
+		--brand-color: #FF0070;
+		--text-color: #F1B2CE;
+		--text-black-color: #000028;
+		--background-text-color: var(--brand-color);
+		--text-shadow-color: var(--brand-color);
+		--text-in-theme-color-hover: #ff007066;
+		--background-url: url('../images/cover-image-dark.png');
+		--background-page-color: #000028;
+	}
+}
+
+@media (prefers-color-scheme: auto) {
+	:root .page.theme_auto {
+		--background-url: url('../images/cover-image.png');
+	}
 }
