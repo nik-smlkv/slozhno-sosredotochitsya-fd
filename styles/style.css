@@ -1,5 +1,11 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
+@media (prefers-color-scheme: auto) {
+	:root .page.theme_auto {
+		--background-url: url('../images/cover-image.png');
+	}
+}
+
 .page {
 	/* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 	background-color: var(--background-page-color);

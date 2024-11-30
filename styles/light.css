@@ -3,5 +3,54 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-.page.theme_light {
+:root .page.theme_light {
+  --title-color: #ffc2e6;
+
+  --text-color: #353430;
+
+  --background-text-color: #ff8dcb;
+
+  --brand-color: #353430;
+
+  --text-black-color: #353430;
+
+  --text-shadow-color: #ff0070;
+
+  --text-shadow-link-color: #ff8dcb;
+
+  --text-in-theme-color-hover: #32312d40;
+
+  --section-background-color: #fff1f7;
+
+  --background-url: url("../images/cover-image-light.png");
+
+  --background-page-color: #fff1f7;
+
+  --display: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root .page.theme_auto {
+    --title-color: #ffc2e6;
+
+    --text-color: #353430;
+
+    --background-text-color: #ff8dcb;
+
+    --brand-color: #353430;
+
+    --text-black-color: #353430;
+
+    --text-shadow-color: #ff0070;
+
+    --text-shadow-link-color: #ff8dcb;
+
+    --text-in-theme-color-hover: #32312d40;
+
+    --background-url: url("../images/cover-image-light.png");
+
+    --background-page-color: #fff1f7;
+
+    --display: none;
+  }
 }
