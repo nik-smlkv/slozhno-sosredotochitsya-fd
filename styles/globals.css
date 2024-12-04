@@ -1,5 +1,5 @@
 /* Глобальные стили для проекта, их можно дополнять и менять по желанию */
-@import url('../fonts/fonts.css');
+
 
 *,
 *::before,
@@ -69,7 +69,6 @@ a {
 }
 
 .main-container {
-	overflow: hidden;
 	display: flex;
 	flex-direction: column;
 	gap: 80px;

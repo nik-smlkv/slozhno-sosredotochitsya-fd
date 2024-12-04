@@ -68,7 +68,11 @@
 }
 
 .what-concentration__content .building__block {
-	flex: 1 1 33.333%;
+	flex: 1 1 31.333%;
+}
+
+.what-concentration__content {
+	flex-wrap: wrap;
 }
 
 .logo {
@@ -411,7 +415,8 @@
 		margin-left: 0px;
 		gap: 55px;
 	}
-	.image-concentration{
+
+	.image-concentration {
 		gap: 10px;
 	}
 }
@@ -428,7 +433,7 @@
 	}
 
 	.header__theme-menu-button:focus {
-		border-bottom: 1px solid var(--text-in-theme-color-hover);
+		border-bottom: 1px solid var(--text-in-theme-color);
 
 	}
 }

@@ -13,6 +13,7 @@
 	--background-text-color: var(--brand-color);
 	--text-shadow-color: var(--brand-color);
 	--text-shadow-link-color: var(--brand-color);
+	--text-in-theme-color: #ff0070;
 	--text-in-theme-color-hover: #ff007066;
 	--background-title-light-theme-color: #FF8DCB;
 	--background-url: url('../images/cover-image-dark.png');

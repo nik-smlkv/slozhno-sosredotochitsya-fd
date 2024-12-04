@@ -20,6 +20,8 @@
 
   --text-in-theme-color-hover: #32312d40;
 
+  --text-in-theme-color: #32312d;
+
   --section-background-color: #fff1f7;
 
   --background-url: url("../images/cover-image-light.png");
@@ -46,6 +48,8 @@
     --text-shadow-link-color: #ff8dcb;
 
     --text-in-theme-color-hover: #32312d40;
+
+	 --text-in-theme-color: #32312d;
 
     --background-url: url("../images/cover-image-light.png");
 
