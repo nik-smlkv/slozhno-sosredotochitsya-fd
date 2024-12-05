@@ -155,7 +155,7 @@
 
 
 .link-decoration:focus {
-	border: 1px solid var(--text-color);
+	border: 1px solid var(--text-in-theme-link-color);
 }
 
 .block__title {
@@ -429,7 +429,7 @@
 
 	.link-decoration:hover {
 
-		border-bottom: 1px solid var(--text-in-theme-color-hover);
+		border-bottom: 1px solid var(--text-in-theme-link-color-hover);
 	}
 
 	.header__theme-menu-button:focus {

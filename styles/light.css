@@ -4,57 +4,65 @@
   переключая тему
 */
 :root .page.theme_light {
-  --title-color: #ffc2e6;
+	--title-color: #ffc2e6;
 
-  --text-color: #353430;
+	--text-color: #353430;
 
-  --background-text-color: #ff8dcb;
+	--background-text-color: #ff8dcb;
 
-  --brand-color: #353430;
+	--brand-color: #353430;
 
-  --text-black-color: #353430;
+	--text-black-color: #353430;
 
-  --text-shadow-color: #ff0070;
+	--text-shadow-color: #ff0070;
 
-  --text-shadow-link-color: #ff8dcb;
+	--text-shadow-link-color: #ff8dcb;
 
-  --text-in-theme-color-hover: #32312d40;
+	--text-in-theme-color-hover: #32312d40;
 
-  --text-in-theme-color: #32312d;
+	--text-in-theme-color: #32312d;
 
-  --section-background-color: #fff1f7;
+	--text-in-theme-link-color: #353430;
 
-  --background-url: url("../images/cover-image-light.png");
+	--text-in-theme-link-color-hover: #353430;
 
-  --background-page-color: #fff1f7;
+	--section-background-color: #fff1f7;
 
-  --display: none;
+	--background-url: url("../images/cover-image-light.png");
+
+	--background-page-color: #fff1f7;
+
+	--display: none;
 }
 
 @media (prefers-color-scheme: light) {
-  :root .page.theme_auto {
-    --title-color: #ffc2e6;
+	:root .page.theme_auto {
+		--title-color: #ffc2e6;
 
-    --text-color: #353430;
+		--text-color: #353430;
 
-    --background-text-color: #ff8dcb;
+		--background-text-color: #ff8dcb;
 
-    --brand-color: #353430;
+		--brand-color: #353430;
 
-    --text-black-color: #353430;
+		--text-black-color: #353430;
 
-    --text-shadow-color: #ff0070;
+		--text-shadow-color: #ff0070;
 
-    --text-shadow-link-color: #ff8dcb;
+		--text-shadow-link-color: #ff8dcb;
 
-    --text-in-theme-color-hover: #32312d40;
+		--text-in-theme-color-hover: #32312d40;
 
-	 --text-in-theme-color: #32312d;
+		--text-in-theme-color: #32312d;
 
-    --background-url: url("../images/cover-image-light.png");
+		--text-in-theme-link-color: #353430;
 
-    --background-page-color: #fff1f7;
+		--text-in-theme-link-color-hover: #353430;
 
-    --display: none;
-  }
+		--background-url: url("../images/cover-image-light.png");
+
+		--background-page-color: #fff1f7;
+
+		--display: none;
+	}
 }
